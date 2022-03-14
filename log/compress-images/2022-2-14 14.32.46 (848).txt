@@ -1,0 +1,7 @@
+File from: [app/images/src/high2.png]
+
+File to: [app/images/dest/high2.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: F:\test task\html\test\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o app/images/dest/high2.png app/images/src/high2.png

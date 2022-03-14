@@ -1,0 +1,29 @@
+$header-top-text-color: $color-white
+$header-top-background-color: $color-primary
+$header-bottom-links-text-color: $color-gray-dark-2
+$header-bottom-slogan-text-color: $color-gray-dark-3
+$header-bottom-search-text-color: $color-black
+.top-menu
+  display: flex
+  background-color: $header-top-background-color
+  color: $header-top-text-color
+  border-radius: 0 0 20px 20px
+  justify-content: space-between
+  &__list
+    display: flex
+    list-style: none
+    padding: 0
+    li
+      padding: 0 24px
+
+.bottom-menu
+  &__link
+    color: $header-bottom-links-text-color
+
+.logo
+  &__slogan
+    color: $header-bottom-slogan-text-color
+
+.search
+  &__input
+    color: $header-bottom-search-text-color
