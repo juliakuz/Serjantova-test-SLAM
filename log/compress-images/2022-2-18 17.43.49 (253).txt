@@ -1,0 +1,14 @@
+File from: [app/images/src/product-slider/33.png]
+
+File to: [app/images/dest/product-slider/33.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: F:\test task\html\test\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o app/images/dest/product-slider/33.png app/images/src/product-slider/33.png
+File from: [app/images/src/product-slider/32.png]
+
+File to: [app/images/dest/product-slider/32.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: F:\test task\html\test\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o app/images/dest/product-slider/32.png app/images/src/product-slider/32.png

@@ -1,0 +1,29 @@
+$button-height: 38px
+$button-font-size: 15px
+$button-h-padding: 16px
+$button-primary-border-color: $color-primary
+$button-primary-bg-color: $color-primary
+$button-primary-text-color: $color-white
+$button-secondary-border-color: $color-primary
+$button-secondary-bg-color: rgba(0, 0, 0, 0)
+$button-secondary-text-color: $color-primary
+
+.button
+  height: $button-height
+  line-height: $button-height
+  padding: 0 $button-h-padding
+  font-size: $button-font-size
+  border-radius: 50px
+
+  &:hover
+    opacity: .5
+
+  &_primary
+    background: $button-primary-bg-color
+    border: 1px solid $button-primary-border-color
+    color: $button-primary-text-color
+
+  &_secondary
+    background: $button-secondary-bg-color
+    border: 1px solid $button-secondary-border-color
+    color: $button-secondary-text-color

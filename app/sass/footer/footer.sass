@@ -1,0 +1,61 @@
+$footer-text-color: $color-white
+$footer-bg-color: $color-primary
+$footer-btn-links-color: $color-primary-transparent
+
+.footer
+  background: $footer-bg-color
+  color: $footer-text-color
+  display: flex
+  justify-content: space-around
+  font-family: Roboto arial sans-serif
+  padding: 32px 16px 54px
+  line-height: 22px
+
+  &__title
+    margin-bottom: 20px
+    line-height: 22px
+    font-size: 18px
+    font-family: RobotoBold arial sans-serif
+
+  &__list
+    padding-left: 0
+    list-style: none
+    margin-bottom: 0
+
+  &__list-item
+    margin-bottom: 12px
+
+  &__link
+    text-decoration: none
+
+  &__link:hover
+    text-decoration: underline
+
+  &__link,
+  &__link:hover
+    color: $footer-text-color
+
+  &__links_social
+    background: $footer-btn-links-color
+
+@media screen and (max-width: $brp_ssm)
+  .footer
+    display: grid
+    grid-template-areas: 'a b' 'c d'
+
+    &__menu
+      padding-bottom: 25px
+
+    &__menu:nth-child(1)
+      grid-area: a
+
+
+    &__menu:nth-child(2)
+      grid-area: b
+
+    &__menu:nth-child(3)
+      grid-area: c
+
+
+    &__menu:nth-child(4)
+      grid-area: d
