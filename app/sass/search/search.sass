@@ -10,7 +10,7 @@ $search-input-bg: $color-gray-light-1
     border: none
 
     &:focus
-      border: none
+      border: 1px solid $input-focus-border-color
       outline: none
 
       + .search__btn
@@ -21,10 +21,10 @@ $search-input-bg: $color-gray-light-1
 
   &__icon,
   &__btn
-    height: 52px
-    width: 52px
+    height: 50px
+    width: 50px
     position: absolute
-    top: 0
+    top: 1px
     cursor: pointer
 
   &__icon
@@ -33,6 +33,6 @@ $search-input-bg: $color-gray-light-1
 
   &__btn
     background: $search-input-bg url("../images/dest/icons/svg/x.svg") 50% 50% no-repeat
-    right: 0
+    right: 2px
     display: none
     border-radius: 50px

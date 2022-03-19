@@ -1,11 +1,8 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot"
-@import "../../node_modules/bootstrap/scss/bootstrap-grid"
-@import "../../node_modules/bootstrap/scss/mixins"
 @import "../../node_modules/slick-carousel/slick/slick"
 @import "../../node_modules/slick-carousel/slick/slick-theme"
 @import "abstracts/variables"
 @import "form/form"
-@import "button/button"
 @import "header/header"
 @import "search/search"
 @import "footer/footer"
@@ -21,9 +18,34 @@ body
 .main
   padding-top: 127px
   padding-bottom: 1px
-  background: transparent url("../images/dest/bg.png") 97% 127% no-repeat
+  background: transparent url("../images/dest/bg.png") 98% 113% no-repeat
+
+  &__container
+    width: 1326px
+    margin: 0 auto
 
 h1
   font-family: RobotoBold arial sans-serif
   font-size: 48px
+  line-height: 22px
   color: $title-h1-text-color
+
+@media screen and (max-width: $brp_sl)
+  .main__container
+    width: 1250px
+
+@media screen and (max-width: $brp_l)
+  .main__container
+    width: 1050px
+
+@media screen and (max-width: $brp_m)
+  .main__container
+    width: 900px
+
+@media screen and (max-width: $brp_sm)
+  .main__container
+    width: 500px
+
+@media screen and (max-width: $brp_ssm)
+  .main__container
+    width: 320px

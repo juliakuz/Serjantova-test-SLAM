@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name=”robots” content=”noindex, nofollow”>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0">
     <title>Test task Yuliya Serjantova</title>
     <link rel="stylesheet" href="css/app.min.css">
 </head>
@@ -67,13 +67,13 @@
             </div>
         </nav>
         <div class="bottom-menu">
-            <div class="logo">
+            <a class="logo" href="/">
                 <img class="logo__img" alt="Logo image" src="images/dest/logo.png">
                 <div class="logo__slogan">
                     <div>Разработка как спорт.</div>
                     <div>Важен только результат.</div>
                 </div>
-            </div>
+            </a>
             <div class="search">
                 <form action="/" autocomplete="off" class="search__form">
                     <div class="search__field">
@@ -96,980 +96,1383 @@
         </div>
     </header>
     <main class="main">
-        <div class="slider slider_top">
-            <div class="slider__wrapper">
-                <div class="slide slider__slide">slide1</div>
-                <div class="slide slider__slide">slide2</div>
-                <div class="slide slider__slide">slide3</div>
-                <div class="slide slider__slide">slide4</div>
-                <div class="slide slider__slide">slide5</div>
-                <div class="slide slider__slide">slide6</div>
-                <div class="slide slider__slide">slide7</div>
-                <div class="slide slider__slide">slide8</div>
-                <div class="slide slider__slide">slide9</div>
-                <div class="slide slider__slide">slide10</div>
+        <div class="main__container">
+            <div class="slider slider_top">
+                <div class="slider__wrapper">
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__text">
+                                <span>Слайдер первого экрана</span>
+                            </div>
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/top-slider/1.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__text">
+                                <span>Блинчики ням-ням</span>
+                            </div>
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/top-slider/2.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__text">
+                                <span>Сочненький шашлычок-башлычок</span>
+                            </div>
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/top-slider/3.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__text">
+                                <span>Мяско для худеющих</span>
+                            </div>
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/top-slider/4.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__text">
+                                <span>Яйца в апельcинах</span>
+                            </div>
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/top-slider/5.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__text">
+                                <span>Пицца "Всё в одном"</span>
+                            </div>
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/top-slider/6.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__text">
+                                <span>Оранжевое настроение</span>
+                            </div>
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/top-slider/7.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="slider slider_product">
-            <h1>Promo block</h1>
-            <div class="slider__wrapper">
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/1.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+            <div class="slider slider_product">
+                <h1>Promo block</h1>
+                <div class="slider__wrapper">
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <span class="slider__promo">Акция -25%</span>
+                            <span class="slider__new">Новинка</span>
+                            <span class="slider__recomendation">Рекомендуем</span>
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/1.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/2.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <span class="slider__promo">Акция -25%</span>
+                            <span class="slider__new">Новинка</span>
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/2.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/3.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide slider__not-available">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/3.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">Отсутствует</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Морские водоросли Нори (плоские) обжаренные сушеные "Clearspring", 13.5г
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/4.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <span class="slider__promo">Акция -25%</span>
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/4.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav slider__fav_active"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Рисовые хлебцы с молочным шоколадом, 34г
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/5.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/5.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/6.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/6.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/7.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/7.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/8.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/8.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/9.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/9.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/10.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/10.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/11.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/11.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/12.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/12.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/13.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/13.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/14.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/14.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/15.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/15.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/16.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/16.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/17.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/18.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/17.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/19.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/20.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/18.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/21.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/22.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/19.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/23.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/24.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/20.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/25.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/26.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/21.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/27.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/28.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/22.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/29.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/30.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/23.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/31.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/32.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/24.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/33.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/34.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/25.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/35.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/36.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/26.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/37.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/38.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/27.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/39.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/40.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/28.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/51.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/52.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/29.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/53.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/54.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/30.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/55.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/56.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/31.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/57.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/58.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/32.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/33.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/34.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/35.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/36.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/37.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/38.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/39.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/40.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/51.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/52.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/53.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/54.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/55.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/56.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/57.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/58.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
+                            </div>
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
+                            </div>
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide slider__slide">
-                    <a href="/">
-                        <div class="slider__img-wrapper">
-                            <img src="images/dest/product-slider/59.png" alt="product photo" onError="this.style.display='none'">
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__status">
-                                <span class="slider__availability">В наличии</span>
-                                <span class="slider__code">Код: <span>4744481010818</span></span>
+                    <div class="slide slider__slide">
+                        <a href="/">
+                            <div class="slider__img-wrapper">
+                                <img data-lazy="images/dest/product-slider/59.png" alt="product photo" onError="this.src='images/dest/product-slider/no_photo.png'">
                             </div>
-                            <div class="slider__text">
-                                Консервы пастеризованные. Бульон куриный жидкий., 350мл
-                                Консервы пастеризованные. Бульон
+                            <span class="slider__fav"></span>
+                            <div class="slider__description">
+                                <div class="slider__status">
+                                    <span class="slider__availability">В наличии</span>
+                                    <span class="slider__code">Код: <span>4744481010818</span></span>
+                                </div>
+                                <div class="slider__text">
+                                    Консервы пастеризованные. Бульон куриный жидкий., 350мл
+                                    Консервы пастеризованные. Бульон
+                                </div>
+                                <div class="slider__price">
+                                    <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
+                                    <span class="slider__purchase">3</span>
+                                </div>
                             </div>
-                            <div class="slider__price">
-                                <div class="slider__amount"><span>500.20 р.</span><span class="slider__amount-old">600.20 р.</span></div>
-                                <span class="slider__purchase">3</span>
+                        </a>
+                        <div class="slider__buy">
+                            <div class="slider__buy-inner">
+                                <span>-</span>
+                                <input type="text" value="200">
+                                <span>+</span>
                             </div>
-                        </div>
-                    </a>
-                    <div class="slider__buy">
-                        <div class="slider__buy-inner">
-                            <span>-</span>
-                            <input type="text" value="200">
-                            <span>+</span>
-                        </div>
-                        <div class="slider__btns">
-                            <input class="button button_secondary" value="Купить в 1 клик" type="button">
-                            <input class="button button_primary" value="В корзину" type="button">
+                            <div class="slider__btns">
+                                <input class="button button_secondary" value="Купить в 1 клик" type="button">
+                                <input class="button button_primary" value="В корзину" type="button">
+                            </div>
                         </div>
                     </div>
                 </div>
