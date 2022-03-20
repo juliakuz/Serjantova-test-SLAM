@@ -6,10 +6,18 @@ $(document).ready(function(){
         dots: false,
         autoplay: true,
         infinite: true,
-        autoplaySpeed: 50000,
+        autoplaySpeed: 5000,
         arrows: true,
         pauseOnHover: true,
-        lazyLoad: 'ondemand'
+        lazyLoad: 'ondemand',
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
 
     $('.slider_product .slider__wrapper').slick({

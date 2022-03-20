@@ -13,7 +13,7 @@ $slide-amount-old-color: $color-gray-dark-3
 $slider-product-height: 460px
 $slider-top-height: 800px
 $slider-top-text-color: $color-white
-$slider-top-font-family: Roboto, sans-serif
+$slider-top-font-family: 'Roboto', sans-serif
 
 .slider
   &__wrapper
@@ -83,7 +83,6 @@ $slider-top-font-family: Roboto, sans-serif
     font-weight: bold
     padding: 10px 110px
 
-
   &_top  .slick-arrow
     z-index: 1000
     background-size: contain
@@ -98,10 +97,11 @@ $slider-top-font-family: Roboto, sans-serif
 
   &_top  .slick-next
     right: 68px
-
+    transform: rotate(180deg)
 
   &_top  .slick-prev
     left: 68px
+    transform: rotate(0deg)
 
   &__promo,
   &__new,
@@ -140,6 +140,30 @@ $slider-top-font-family: Roboto, sans-serif
   &__code
     color: $slide-text-color-code
 
+  &__purchase-icon
+    background: url("../../images/dest/icons/svg/buy.svg") 0 50% no-repeat
+    padding-left: 40px
+    display: inline-block
+    height: 30px
+    line-height: 30px
+    background-size: 65%
+    position: relative
+
+  &__purchase
+    position: absolute
+    top: -2px
+    left: 9px
+    background-color: $header-purchases-color
+    color: $header-top-text-color
+    width: 21px
+    height: 16px
+    line-height: 16px
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    font-size: 12px
+    text-align: center
+
   &__not-available
     img
       opacity: .5
@@ -147,7 +171,7 @@ $slider-top-font-family: Roboto, sans-serif
     .slider__availability
       color: $slide-text-color-error
 
-    .slider__purchase
+    .slider__purchase-icon
       display: none
 
   a
@@ -212,6 +236,7 @@ $slider-top-font-family: Roboto, sans-serif
 
   &__text
     height: 88px
+    overflow: hidden
 
   &__price,
   &__status
@@ -331,8 +356,6 @@ $slider-top-font-family: Roboto, sans-serif
 
 .slick-next
   right: -130px
-
-.slick-next
   background: url("../../images/dest/icons/svg/arrow-orange.svg")
   transform: rotate(180deg)
 
@@ -343,21 +366,11 @@ $slider-top-font-family: Roboto, sans-serif
   .slick-next
     right: -4%
 
-@media screen and (max-width: $brp_l)
-//  .slider_product .slider__wrapper
-//    width: 920px
-//
-@media screen and (max-width: $brp_m)
-//  .slider.slider_product .slider__wrapper
-//    width: 600px
-//
-@media screen and (max-width: $brp_sm)
-//  .slider_product .slider__wrapper
-//    width: 400px
-//
 @media screen and (max-width: $brp_ssm)
-  //.slick-prev,
-  //.slick-next
-  //  display: none
-//  .slider_product .slider__wrapper
-//    width: 320px
+  .slider_top
+    .slider__text
+      font-size: 30px
+      line-height: 32px
+
+    .slider__slide
+      height: 400px

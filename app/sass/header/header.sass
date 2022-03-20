@@ -183,12 +183,16 @@ header
       a
         background: url("../images/dest/icons/svg/buy.svg") 0 50% no-repeat
         padding-left: 40px
+        display: inline-block
+        height: 30px
+        line-height: 30px
+        background-size: 35px
         position: relative
 
   &__purchase
     position: absolute
-    top: -9px
-    left: 12px
+    top: -2px
+    left: 9px
     background-color: $header-purchases-color
     color: $header-top-text-color
     width: 21px
@@ -199,6 +203,7 @@ header
     border-radius: 10px
     font-size: 12px
     text-align: center
+
 
   &__link
     text-decoration: none
@@ -273,6 +278,7 @@ header
 
     &__list_right
       width: 48%
+      padding-left: 16px
 
       li:nth-child(n) a
         padding-left: 0
@@ -294,6 +300,10 @@ header
     justify-content: flex-end
     border-radius: 0
     padding: 10px 0 15px
+
+    &__list_left,
+    &__list_right
+      width: 80%
 
     &__list
       flex-direction: column

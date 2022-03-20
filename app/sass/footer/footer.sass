@@ -7,7 +7,7 @@ $footer-btn-links-color: $color-primary-transparent
   color: $footer-text-color
   display: flex
   justify-content: space-around
-  font-family: Roboto arial sans-serif
+  font-family: 'Roboto', sans-serif
   padding: 32px 16px 54px
   line-height: 22px
 
@@ -15,18 +15,32 @@ $footer-btn-links-color: $color-primary-transparent
     margin-bottom: 20px
     line-height: 22px
     font-size: 18px
-    font-family: RobotoBold arial sans-serif
+    font-family: 'Roboto', sans-serif
+    font-weight: bold
 
   &__list
     padding-left: 0
     list-style: none
     margin-bottom: 0
 
+  &__menu:last-child a
+      display: inline-block
+      padding-left: 35px
+
   &__list-item
     margin-bottom: 12px
 
   &__link
     text-decoration: none
+
+    &_clock
+      background: url("../../images/dest/icons/svg/clock.svg") no-repeat
+
+    &_tel
+      background: url("../../images/dest/icons/svg/phone.svg") no-repeat
+
+    &_email
+      background: url("../../images/dest/icons/svg/mail2.svg") no-repeat
 
   &__link:hover
     text-decoration: underline
@@ -35,8 +49,19 @@ $footer-btn-links-color: $color-primary-transparent
   &__link:hover
     color: $footer-text-color
 
-  &__links_social
-    background: $footer-btn-links-color
+  &__link_social
+    width: 32px
+    height: 32px
+    border-radius: 100%
+
+    &:hover
+      opacity: .8
+
+  &__link_fb
+    background: $footer-btn-links-color url("../../images/dest/icons/svg/fb.svg") 50% 50% no-repeat
+
+  &__link_insta
+    background: $footer-btn-links-color url("../../images/dest/icons/svg/instagramm.svg") 50% 50% no-repeat
 
 @media screen and (max-width: $brp_ssm)
   .footer
