@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // if js is alowed:
+    $('body').addClass('js');
+
     // Init slider:
     $('.slider_top .slider__wrapper').slick({
         slidesToShow: 1,
@@ -121,6 +124,5 @@ $(document).ready(function () {
     // Check touch/no-touch device
     if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
         $('body').addClass('touch');
-
     }
 });
