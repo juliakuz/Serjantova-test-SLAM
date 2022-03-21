@@ -173,9 +173,15 @@ $slider-top-font-family: $secondary-font-family
     font-size: 12px
     text-align: center
 
+  .slick-lazyload-error
+    background: url("../../images/dest/product-slider/no_photo.png") no-repeat
+    background-size: contain
+    height: 100%
+    width: 100%
+
   &__not-available
     img
-      opacity: .5
+      opacity: .5 !important
 
     .slider__availability
       color: $slide-text-color-error
