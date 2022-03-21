@@ -7,7 +7,7 @@ $footer-btn-links-color: $color-primary-transparent
   color: $footer-text-color
   display: flex
   justify-content: space-around
-  font-family: 'Roboto', sans-serif
+  font-family: $secondary-font-family
   padding: 32px 16px 54px
   line-height: 22px
 
@@ -15,7 +15,7 @@ $footer-btn-links-color: $color-primary-transparent
     margin-bottom: 20px
     line-height: 22px
     font-size: 18px
-    font-family: 'Roboto', sans-serif
+    font-family: $secondary-font-family
     font-weight: bold
 
   &__list
@@ -24,8 +24,8 @@ $footer-btn-links-color: $color-primary-transparent
     margin-bottom: 0
 
   &__menu:last-child a
-      display: inline-block
-      padding-left: 35px
+    display: inline-block
+    padding-left: 35px
 
   &__list-item
     margin-bottom: 12px
@@ -74,13 +74,11 @@ $footer-btn-links-color: $color-primary-transparent
     &__menu:nth-child(1)
       grid-area: a
 
-
     &__menu:nth-child(2)
       grid-area: b
 
     &__menu:nth-child(3)
       grid-area: c
-
 
     &__menu:nth-child(4)
       grid-area: d

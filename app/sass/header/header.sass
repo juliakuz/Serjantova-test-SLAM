@@ -71,7 +71,6 @@ header
       ~ .top-menu__hamb .top-menu__hamb-line::after
         transform: rotate(45deg)
         top: 0
-  
 
   &__list
     display: flex
@@ -138,12 +137,12 @@ header
     display: none
     transform: scaleY(0)
     transform-origin: 0 0
-      
+
   a
     color: $header-top-text-color
     text-decoration: none
     white-space: nowrap
-    
+
     &:hover
       color: $header-top-text-color
       text-decoration: underline
@@ -158,12 +157,11 @@ header
     height: 8px
     background: url('../images/dest/icons/svg/arrow-down.svg') 50% 50% no-repeat
 
-
 .bottom-menu
   display: flex
   justify-content: space-between
   padding: 16px 0 18px
-  
+
   &__list
     display: flex
     list-style: none
@@ -186,7 +184,7 @@ header
         display: inline-block
         height: 30px
         line-height: 30px
-        background-size: 35px
+        background-size: 28px
         position: relative
 
   &__purchase
@@ -203,7 +201,6 @@ header
     border-radius: 10px
     font-size: 12px
     text-align: center
-
 
   &__link
     text-decoration: none
@@ -238,14 +235,12 @@ header
     color: $header-bottom-slogan-text-color
     text-align: center
 
-
 .search
   width: 41%
   flex-shrink: 2
 
   &__input
     color: $header-bottom-search-text-color
-
 
 @media screen and (max-width: $brp_sl)
   .top-menu
@@ -284,8 +279,16 @@ header
         padding-left: 0
         background: none
 
-  .bottom-menu__link span:last-child
-    display: none
+  .bottom-menu
+    &__link
+      &:hover
+        opacity: .7
+
+    span:last-child
+      display: none
+
+    &__list
+      transform: translate(0, 10px)
 
   .logo
     flex-basis: 36%
@@ -321,7 +324,7 @@ header
     &__wrapper
       width: fit-content
       flex-direction: column
-    
+
     &__hamb
       display: flex
       order: 1
@@ -390,4 +393,3 @@ header
       height: 40px
       line-height: 40px
       padding: 0 0 0 30px
-

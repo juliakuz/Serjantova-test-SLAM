@@ -13,7 +13,7 @@ $slide-amount-old-color: $color-gray-dark-3
 $slider-product-height: 460px
 $slider-top-height: 800px
 $slider-top-text-color: $color-white
-$slider-top-font-family: 'Roboto', sans-serif
+$slider-top-font-family: $secondary-font-family
 
 .slider
   &__wrapper
@@ -244,7 +244,7 @@ $slider-top-font-family: 'Roboto', sans-serif
     justify-content: space-between
 
   &__amount
-    font-family: HeliosC, sans-serif
+    font-family: $main-font-family
     line-height: 36px
     font-size: 1.5rem
     color: $slide-text-color-amount
@@ -269,7 +269,6 @@ $slider-top-font-family: 'Roboto', sans-serif
     transition: height 0.15s ease-out
     padding: 6px 20px 12px
 
-
   &__buy-inner
     position: relative
 
@@ -290,6 +289,19 @@ $slider-top-font-family: 'Roboto', sans-serif
       left: auto
       right: 0
 
+.touch
+  .slider_product .slider__slide,
+  .slick-dotted.slick-slider
+    height: 566px
+
+  .slider__buy
+    height: 106px
+
+  .slick-dotted.slick-slider
+    margin-bottom: 150px
+
+  .slick-dots
+    bottom: -80px
 
 .slick-list
   z-index: 100
@@ -299,17 +311,14 @@ $slider-top-font-family: 'Roboto', sans-serif
   margin-top: 24px
   margin-bottom: 24px
 
-
 .slide
   box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08)
   width: 309px
   background: $slide-bg-color
 
-
 .slick-dotted.slick-slider
   margin: 98px 0
   height: 515px
-
 
 .slick-dots
   margin: 20px 0 0 0
@@ -350,6 +359,14 @@ $slider-top-font-family: 'Roboto', sans-serif
   &:focus,
   &:hover
     opacity: .5
+
+.slick-prev,
+.slick-next,
+.slick-prev:before,
+.slick-next:before,
+.slick-dots li button:before
+  font-family: $main-font-family
+
 
 .slick-prev
   left: -130px
