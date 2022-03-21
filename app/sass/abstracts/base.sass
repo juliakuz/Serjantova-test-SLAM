@@ -1,0 +1,54 @@
+$title-h1-text-color: $color-primary
+$body-font-size: $main-font-size
+$body-line-height: $main-line-height
+$h1-font-size: 48px
+$h1-line-height: 48px
+
+html,
+body
+  padding: 0
+  margin: 0
+  min-height: 100%
+  min-width: 420px
+
+body
+  font-size: $body-font-size
+  line-height: $body-line-height
+  font-family: $main-font-family
+
+.main
+  padding-top: 127px
+  padding-bottom: 1px
+  background: transparent url("../../images/dest/bg.png") 98% 113% no-repeat
+
+  &__container
+    width: 1326px
+    margin: 0 auto
+
+h1
+  font-family: $secondary-font-family
+  font-size: $h1-font-size
+  line-height: $h1-line-height
+  font-weight: bold
+  padding-left: 15px
+  color: $title-h1-text-color
+
+@media screen and (max-width: $brp_sl)
+  .main__container
+    width: 1250px
+
+@media screen and (max-width: $brp_l)
+  .main__container
+    width: 1050px
+
+@media screen and (max-width: $brp_m)
+  .main__container
+    width: 900px
+
+@media screen and (max-width: $brp_sm)
+  .main__container
+    width: 500px
+
+@media screen and (max-width: $brp_ssm)
+  .main__container
+    width: 80%

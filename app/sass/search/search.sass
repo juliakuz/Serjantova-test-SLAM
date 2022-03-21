@@ -1,0 +1,39 @@
+$search-input-bg: $color-gray-light-1
+.search
+  &__input
+    width: 100%
+    border-radius: 50px
+    height: 52px
+    line-height: 52px
+    padding: 0 0 0 60px
+    background: $search-input-bg
+    border: none
+
+    &:focus
+      border: 1px solid $input-focus-border-color
+      outline: none
+
+      + .search__btn
+        height: 50px
+
+  &__field
+    position: relative
+
+  &__icon,
+  &__btn
+    height: 50px
+    width: 50px
+    position: absolute
+    top: 1px
+    cursor: pointer
+
+  &__icon
+    background: url("../images/dest/icons/svg/search.svg") 50% 50% no-repeat
+    left: 0
+
+  &__btn
+    background: $search-input-bg url("../images/dest/icons/svg/x.svg") 50% 50% no-repeat
+    right: 2px
+    cursor: pointer
+    height: 0
+    border-radius: 50px

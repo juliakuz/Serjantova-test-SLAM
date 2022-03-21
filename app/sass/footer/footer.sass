@@ -1,0 +1,84 @@
+$footer-text-color: $color-white
+$footer-bg-color: $color-primary
+$footer-btn-links-color: $color-primary-transparent
+
+.footer
+  background: $footer-bg-color
+  color: $footer-text-color
+  display: flex
+  justify-content: space-around
+  font-family: $secondary-font-family
+  padding: 32px 16px 54px
+  line-height: 22px
+
+  &__title
+    margin-bottom: 20px
+    line-height: 22px
+    font-size: 18px
+    font-family: $secondary-font-family
+    font-weight: bold
+
+  &__list
+    padding-left: 0
+    list-style: none
+    margin-bottom: 0
+
+  &__menu:last-child a
+    display: inline-block
+    padding-left: 35px
+
+  &__list-item
+    margin-bottom: 12px
+
+  &__link
+    text-decoration: none
+
+    &_clock
+      background: url("../../images/dest/icons/svg/clock.svg") no-repeat
+
+    &_tel
+      background: url("../../images/dest/icons/svg/phone.svg") no-repeat
+
+    &_email
+      background: url("../../images/dest/icons/svg/mail2.svg") no-repeat
+
+  &__link:hover
+    text-decoration: underline
+
+  &__link,
+  &__link:hover
+    color: $footer-text-color
+
+  &__link_social
+    width: 32px
+    height: 32px
+    border-radius: 100%
+
+    &:hover
+      opacity: .8
+
+  &__link_fb
+    background: $footer-btn-links-color url("../../images/dest/icons/svg/fb.svg") 50% 50% no-repeat
+
+  &__link_insta
+    background: $footer-btn-links-color url("../../images/dest/icons/svg/instagramm.svg") 50% 50% no-repeat
+
+@media screen and (max-width: $brp_ssm)
+  .footer
+    display: grid
+    grid-template-areas: 'a b' 'c d'
+
+    &__menu
+      padding-bottom: 25px
+
+    &__menu:nth-child(1)
+      grid-area: a
+
+    &__menu:nth-child(2)
+      grid-area: b
+
+    &__menu:nth-child(3)
+      grid-area: c
+
+    &__menu:nth-child(4)
+      grid-area: d
